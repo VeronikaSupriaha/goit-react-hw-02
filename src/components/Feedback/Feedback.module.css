@@ -1,3 +1,13 @@
 .feedbackList{
     list-style: none;
+   padding: 0;
+   text-align: center;
+}
+
+.feedbackText{
+    color: #040306;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 118%;
+    margin-bottom: 12px;
 }

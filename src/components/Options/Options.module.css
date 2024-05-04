@@ -1,4 +1,25 @@
 .btnContainer{
     display: flex;
     gap: 12px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.feedbackBtn{
+    cursor: pointer;
+    width: 122px;
+    height: 46px;
+    background-color: rgb(21, 7, 47);
+    border-radius: 15px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: #fbfbfb;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.29;
+    letter-spacing: -.02em;
+    outline: 0px solid transparent;
 }
