@@ -33,6 +33,10 @@ export default function App() {
     }));
   };
 
+  const positiveFeedback = Math.round(
+    (feedbackTypes.good / totalFeedback) * 100
+  );
+
   return (
     <>
       <Description />
@@ -42,7 +46,11 @@ export default function App() {
         setFeedbackTypes={setFeedbackTypes}
       />
       {totalFeedback > 0 ? (
-        <Feedback feedbackTypes={feedbackTypes} totalFeedback={totalFeedback} />
+        <Feedback
+          feedbackTypes={feedbackTypes}
+          totalFeedback={totalFeedback}
+          positiveFeedback={positiveFeedback}
+        />
       ) : (
         <Notification />
       )}
